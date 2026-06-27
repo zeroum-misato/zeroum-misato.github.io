@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZEROUM株式会社｜三郷市の電気・空調工事</title>
+<meta name="description" content="ZEROUM（ゼローム）株式会社は埼玉県三郷市の電気・空調工事会社。エアコン取付・交換、換気扇、電気工事、業務用空調まで対応。無料相談・お見積り受付中。">
+<style>
+:root{--green:#2f9e44;--green-d:#1b5e20;--line:#e3e9e3;--col:840px;--hdr:54px}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;color:var(--green-d)}
+.hdr{position:fixed;top:0;left:0;right:0;height:var(--hdr);z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.1) blur(4px)}
+.hdr-in{max-width:1100px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.brand{font-weight:800;letter-spacing:.14em;color:var(--green-d);font-size:19px;text-decoration:none}
+.brand span{color:var(--green)}
+.wrap{max-width:var(--col);margin:0 auto;padding-top:var(--hdr);background:#fff;box-shadow:0 0 50px rgba(0,0,0,.07);min-height:100vh}
+.sec{position:relative;line-height:0} .sec img{width:100%;display:block}
+.sec[id]{scroll-margin-top:calc(var(--hdr) + 4px)}
+.cta{position:absolute;display:block;border-radius:40px;outline:0}
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--green-d);text-decoration:none;font-size:14px;font-weight:700;padding:8px 16px;border:1.5px solid var(--green);border-radius:22px;transition:.15s}
+.back:hover{background:var(--green);color:#fff}
+
+.links{display:flex;gap:20px}
+.links a{color:var(--green-d);text-decoration:none;font-size:14px;font-weight:600;padding:6px 2px;border-bottom:2px solid transparent;transition:.15s}
+.links a:hover{border-bottom-color:var(--green)}
+.burger{display:none;border:0;background:transparent;cursor:pointer;padding:8px;width:44px;height:44px}
+.burger span{display:block;height:2.5px;background:var(--green-d);border-radius:2px;margin:5px 0;transition:.25s}
+.drawer{position:fixed;inset:var(--hdr) 0 auto 0;background:#fff;z-index:49;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .28s ease;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.drawer.open{transform:translateY(0)}
+.d-link{display:block;padding:15px 22px;color:var(--green-d);text-decoration:none;font-size:15px;font-weight:600;border-top:1px solid var(--line)}
+.d-link:first-child{border-top:0}
+@media(max-width:767px){.links{display:none} .burger{display:block}}
+</style></head><body>
+<header class="hdr"><div class="hdr-in">
+<a href="#top" class="brand">ZER<span>O</span>UM</a>
+<nav class="links"><a href="#top">TOP</a><a href="#point">選ばれる理由</a><a href="#service">サービス内容</a><a href="#works">施工事例</a><a href="#flow">お申し込みの流れ</a><a href="#faq">よくあるご質問</a><a href="#company">会社情報</a></nav>
+<button class="burger" id="burger" aria-label="メニュー"><span></span><span></span><span></span></button>
+</div></header>
+<div class="drawer" id="drawer"><a href="#top" class="d-link">TOP</a><a href="#point" class="d-link">選ばれる理由</a><a href="#service" class="d-link">サービス内容</a><a href="#works" class="d-link">施工事例</a><a href="#flow" class="d-link">お申し込みの流れ</a><a href="#faq" class="d-link">よくあるご質問</a><a href="#company" class="d-link">会社情報</a></div>
+<main class="wrap"><section id="top" class="sec"><img src="images/top.png" alt="TOP" loading="lazy"><a class="cta" href="#" data-estimate style="top:0.4%;left:45.3%;width:28.6%;height:5.2%"></a><a class="cta" href="#" data-estimate style="top:89.9%;left:26.6%;width:46.6%;height:8.5%"></a></section><section id="point" class="sec"><img src="images/point.png" alt="選ばれる理由" loading="lazy"></section><section id="service" class="sec"><img src="images/service.png" alt="サービス内容" loading="lazy"></section><section id="works" class="sec"><img src="images/works.png" alt="施工事例" loading="lazy"><a class="cta" href="works.html" style="top:91.2%;left:28.6%;width:42.7%;height:5.2%"></a></section><section id="flow" class="sec"><img src="images/flow.png" alt="お申し込みの流れ" loading="lazy"><a class="cta" href="#" data-estimate style="top:89.1%;left:26.5%;width:47.0%;height:8.3%"></a></section><section id="faq" class="sec"><img src="images/faq.png" alt="よくあるご質問" loading="lazy"></section><section id="company" class="sec"><img src="images/company.png" alt="会社情報" loading="lazy"><a class="cta" href="recruit.html" style="top:64.2%;left:24.5%;width:50.9%;height:6.3%"></a><a class="cta" href="#" data-estimate style="top:85.4%;left:26.5%;width:47.0%;height:7.0%"></a></section></main>
+<script>
+const b=document.getElementById('burger'),dw=document.getElementById('drawer');
+b.addEventListener('click',()=>dw.classList.toggle('open'));
+dw.querySelectorAll('.d-link').forEach(a=>a.addEventListener('click',()=>dw.classList.remove('open')));
+document.querySelectorAll('[data-estimate]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('お見積りフォームは準備中です。');}));
+</script></body></html>
