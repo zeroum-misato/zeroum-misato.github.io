@@ -2,6 +2,30 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ZEROUM株式会社｜三郷市の電気・空調工事</title>
 <meta name="description" content="ZEROUM（ゼローム）株式会社は埼玉県三郷市の電気・空調工事会社。エアコン取付・交換、換気扇、電気工事、業務用空調まで対応。無料相談・お見積り受付中。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "name": "ZEROUM株式会社",
+  "alternateName": "ゼローム株式会社",
+  "description": "埼玉県三郷市の電気・空調工事会社。家庭用エアコンの取り付け・交換、キッチン・トイレ・お風呂の換気扇、給湯器交換、業務用エアコン、ビル・店舗の換気システム、電気工事・設備メンテナンスに対応。",
+  "url": "https://ishiwata-alt.github.io/zeroum_site/",
+  "telephone": "+81-90-2761-1486",
+  "faxNumber": "+81-48-611-7930",
+  "email": "hirano.zeroum@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "341-0043",
+    "addressRegion": "埼玉県",
+    "addressLocality": "三郷市",
+    "streetAddress": "栄1-102-2",
+    "addressCountry": "JP"
+  },
+  "areaServed": { "@type": "AdministrativeArea", "name": "埼玉県三郷市および近隣エリア" },
+  "founder": { "@type": "Person", "name": "平野 修" },
+  "foundingDate": "2019"
+}
+</script>
 <style>
 :root{--green:#2f9e44;--green-d:#1b5e20;--line:#e3e9e3;--col:840px;--hdr:54px}
 *{box-sizing:border-box} html{scroll-behavior:smooth}
@@ -27,17 +51,72 @@ body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto S
 .d-link{display:block;padding:15px 22px;color:var(--green-d);text-decoration:none;font-size:15px;font-weight:600;border-top:1px solid var(--line)}
 .d-link:first-child{border-top:0}
 @media(max-width:767px){.links{display:none} .burger{display:block}}
+
+/* ===== 問い合わせセクション ===== */
+.contact{background:#f4f9f4;padding:44px 22px 40px;text-align:center;line-height:1.75;scroll-margin-top:calc(var(--hdr) + 4px)}
+.c-ttl{font-size:22px;font-weight:800;letter-spacing:.06em;margin:0;color:var(--green-d)}
+.c-ttl::after{content:"";display:block;width:46px;height:3px;background:var(--green);border-radius:2px;margin:12px auto 0}
+.c-lead{font-size:14px;margin:18px auto 24px;max-width:32em;color:#375c3a}
+.c-btns{display:flex;flex-direction:column;gap:12px;max-width:400px;margin:0 auto}
+.c-btn{display:block;text-decoration:none;border-radius:14px;padding:13px 18px;border:2px solid var(--green);transition:.15s}
+.c-btn-lb{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;opacity:.92}
+.c-btn-no{display:block;font-size:22px;font-weight:800;letter-spacing:.03em;margin-top:3px}
+.c-tel{background:var(--green);color:#fff;box-shadow:0 4px 12px rgba(47,158,68,.26)}
+.c-tel:hover{background:var(--green-d);border-color:var(--green-d)}
+.c-mail{background:#fff;color:var(--green-d)}
+.c-mail:hover{background:var(--green);color:#fff}
+.c-mail .c-btn-no{font-size:15px;word-break:break-all}
+.c-form{background:#fff;color:var(--green-d)}
+.c-form:hover{background:var(--green);color:#fff}
+.c-form .c-btn-no{font-size:17px}
+
+/* ===== フッター ===== */
+.ftr{background:var(--green-d);color:#dbe8dc;padding:30px 22px 26px;font-size:13px;line-height:1.9}
+.ftr-in{max-width:600px;margin:0 auto}
+.ftr-name{font-size:16px;font-weight:800;color:#fff;letter-spacing:.05em;margin:0 0 12px}
+.ftr-name small{font-size:12px;font-weight:600;letter-spacing:0;opacity:.8}
+.ftr dl{display:grid;grid-template-columns:5em 1fr;gap:1px 12px;margin:0}
+.ftr dt{font-weight:700;color:#a9cbad;white-space:nowrap}
+.ftr dd{margin:0}
+.ftr a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.ftr-lic{font-size:12px;color:#a9cbad;border-top:1px solid rgba(255,255,255,.18);padding-top:12px;margin-top:14px}
+@media(max-width:480px){.ftr dl{grid-template-columns:5.2em 1fr;gap:1px 8px}}
 </style></head><body>
 <header class="hdr"><div class="hdr-in">
 <a href="#top" class="brand">ZER<span>O</span>UM</a>
-<nav class="links"><a href="#top">TOP</a><a href="#point">選ばれる理由</a><a href="#service">サービス内容</a><a href="#works">施工事例</a><a href="#flow">お申し込みの流れ</a><a href="#faq">よくあるご質問</a><a href="#company">会社情報</a></nav>
+<nav class="links"><a href="#top">TOP</a><a href="#point">選ばれる理由</a><a href="#service">サービス内容</a><a href="#works">施工事例</a><a href="#flow">お申し込みの流れ</a><a href="#faq">よくあるご質問</a><a href="#company">会社情報</a><a href="#contact">お問い合わせ</a></nav>
 <button class="burger" id="burger" aria-label="メニュー"><span></span><span></span><span></span></button>
 </div></header>
-<div class="drawer" id="drawer"><a href="#top" class="d-link">TOP</a><a href="#point" class="d-link">選ばれる理由</a><a href="#service" class="d-link">サービス内容</a><a href="#works" class="d-link">施工事例</a><a href="#flow" class="d-link">お申し込みの流れ</a><a href="#faq" class="d-link">よくあるご質問</a><a href="#company" class="d-link">会社情報</a></div>
-<main class="wrap"><section id="top" class="sec"><img src="images/top.png" alt="TOP" loading="lazy"><a class="cta" href="#" data-estimate style="top:0.4%;left:45.3%;width:28.6%;height:5.2%"></a><a class="cta" href="#" data-estimate style="top:89.9%;left:26.6%;width:46.6%;height:8.5%"></a></section><section id="point" class="sec"><img src="images/point.png" alt="選ばれる理由" loading="lazy"></section><section id="service" class="sec"><img src="images/service.png" alt="サービス内容" loading="lazy"></section><section id="works" class="sec"><img src="images/works.png" alt="施工事例" loading="lazy"><a class="cta" href="works.html" style="top:91.2%;left:28.6%;width:42.7%;height:5.2%"></a></section><section id="flow" class="sec"><img src="images/flow.png" alt="お申し込みの流れ" loading="lazy"><a class="cta" href="#" data-estimate style="top:89.1%;left:26.5%;width:47.0%;height:8.3%"></a></section><section id="faq" class="sec"><img src="images/faq.png" alt="よくあるご質問" loading="lazy"></section><section id="company" class="sec"><img src="images/company.png" alt="会社情報" loading="lazy"><a class="cta" href="recruit.html" style="top:64.2%;left:24.5%;width:50.9%;height:6.3%"></a><a class="cta" href="#" data-estimate style="top:85.4%;left:26.5%;width:47.0%;height:7.0%"></a></section></main>
+<div class="drawer" id="drawer"><a href="#top" class="d-link">TOP</a><a href="#point" class="d-link">選ばれる理由</a><a href="#service" class="d-link">サービス内容</a><a href="#works" class="d-link">施工事例</a><a href="#flow" class="d-link">お申し込みの流れ</a><a href="#faq" class="d-link">よくあるご質問</a><a href="#company" class="d-link">会社情報</a><a href="#contact" class="d-link">お問い合わせ</a></div>
+<main class="wrap"><section id="top" class="sec"><img src="images/top.png" alt="ZEROUM株式会社｜埼玉県三郷市のエアコン取り付け・交換・電気工事" loading="lazy"><a class="cta" href="#contact" style="top:0.4%;left:45.3%;width:28.6%;height:5.2%"></a><a class="cta" href="#contact" style="top:89.9%;left:26.6%;width:46.6%;height:8.5%"></a></section><section id="point" class="sec"><img src="images/point.png" alt="ZEROUMが選ばれる理由" loading="lazy"></section><section id="service" class="sec"><img src="images/service.png" alt="サービス内容｜家庭用エアコンの取り付け・交換、キッチン・トイレ・お風呂の換気扇、給湯器交換、業務用エアコン、ビル・店舗の換気システム、電気工事・設備メンテナンス" loading="lazy"></section><section id="works" class="sec"><img src="images/works.png" alt="施工事例とお客様の声" loading="lazy"><a class="cta" href="works.html" style="top:91.2%;left:28.6%;width:42.7%;height:5.2%"></a></section><section id="flow" class="sec"><img src="images/flow.png" alt="お申し込みの流れ" loading="lazy"><a class="cta" href="#contact" style="top:89.1%;left:26.5%;width:47.0%;height:8.3%"></a></section><section id="faq" class="sec"><img src="images/faq.png" alt="よくあるご質問" loading="lazy"></section><section id="company" class="sec"><img src="images/company.png" alt="会社情報｜ZEROUM株式会社（埼玉県三郷市栄1-102-2）" loading="lazy"><a class="cta" href="recruit.html" style="top:64.2%;left:24.5%;width:50.9%;height:6.3%"></a><a class="cta" href="#contact" style="top:85.4%;left:26.5%;width:47.0%;height:7.0%"></a></section>
+
+<section id="contact" class="contact">
+<h2 class="c-ttl">無料相談・お見積り</h2>
+<p class="c-lead">エアコンの取り付け・交換、換気扇、給湯器、電気工事のことなら、まずはお気軽にご相談ください。お見積りは無料です。</p>
+<div class="c-btns">
+<a class="c-btn c-tel" href="tel:09027611486"><span class="c-btn-lb">お電話でのご相談</span><span class="c-btn-no">090-2761-1486</span></a>
+<!-- ▼ Googleフォームができたら、次の1行のコメントを外して FORM_URL を差し替えてください -->
+<!-- <a class="c-btn c-form" href="FORM_URL" target="_blank" rel="noopener"><span class="c-btn-lb">フォームでのご相談</span><span class="c-btn-no">24時間受付中</span></a> -->
+<a class="c-btn c-mail" href="mailto:hirano.zeroum@gmail.com?subject=%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87%E3%83%BB%E3%81%8A%E8%A6%8B%E7%A9%8D%E3%82%8A%E3%81%AE%E3%81%94%E4%BE%9D%E9%A0%BC"><span class="c-btn-lb">メールでのご相談</span><span class="c-btn-no">hirano.zeroum@gmail.com</span></a>
+</div>
+</section>
+
+<footer class="ftr"><div class="ftr-in">
+<p class="ftr-name">ZEROUM株式会社 <small>（ゼローム株式会社）</small></p>
+<dl>
+<dt>代表者</dt><dd>代表取締役　平野 修</dd>
+<dt>所在地</dt><dd>〒341-0043　埼玉県三郷市栄1-102-2</dd>
+<dt>電話</dt><dd><a href="tel:09027611486">090-2761-1486</a></dd>
+<dt>FAX</dt><dd>048-611-7930</dd>
+<dt>メール</dt><dd><a href="mailto:hirano.zeroum@gmail.com">hirano.zeroum@gmail.com</a></dd>
+<dt>事業内容</dt><dd>電気計装工事、電気工事、空調設備工事</dd>
+<dt>対応エリア</dt><dd>埼玉県三郷市を中心とした近隣エリア</dd>
+</dl>
+<p class="ftr-lic">建設業許可　埼玉県知事許可　電気工事業（般-1）第72766号<br>電気工事業登録　埼玉県知事届出　第2019070号</p>
+</div></footer>
+</main>
 <script>
 const b=document.getElementById('burger'),dw=document.getElementById('drawer');
 b.addEventListener('click',()=>dw.classList.toggle('open'));
 dw.querySelectorAll('.d-link').forEach(a=>a.addEventListener('click',()=>dw.classList.remove('open')));
-document.querySelectorAll('[data-estimate]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('お見積りフォームは準備中です。');}));
 </script></body></html>

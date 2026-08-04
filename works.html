@@ -16,13 +16,69 @@ body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto S
 .cta{position:absolute;display:block;border-radius:40px;outline:0}
 .back{display:inline-flex;align-items:center;gap:6px;color:var(--green-d);text-decoration:none;font-size:14px;font-weight:700;padding:8px 16px;border:1.5px solid var(--green);border-radius:22px;transition:.15s}
 .back:hover{background:var(--green);color:#fff}
+
+/* ===== 問い合わせセクション ===== */
+.contact{background:#f4f9f4;padding:44px 22px 40px;text-align:center;line-height:1.75;scroll-margin-top:calc(var(--hdr) + 4px)}
+.c-ttl{font-size:22px;font-weight:800;letter-spacing:.06em;margin:0;color:var(--green-d)}
+.c-ttl::after{content:"";display:block;width:46px;height:3px;background:var(--green);border-radius:2px;margin:12px auto 0}
+.c-lead{font-size:14px;margin:18px auto 24px;max-width:32em;color:#375c3a}
+.c-btns{display:flex;flex-direction:column;gap:12px;max-width:400px;margin:0 auto}
+.c-btn{display:block;text-decoration:none;border-radius:14px;padding:13px 18px;border:2px solid var(--green);transition:.15s}
+.c-btn-lb{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;opacity:.92}
+.c-btn-no{display:block;font-size:22px;font-weight:800;letter-spacing:.03em;margin-top:3px}
+.c-tel{background:var(--green);color:#fff;box-shadow:0 4px 12px rgba(47,158,68,.26)}
+.c-tel:hover{background:var(--green-d);border-color:var(--green-d)}
+.c-mail{background:#fff;color:var(--green-d)}
+.c-mail:hover{background:var(--green);color:#fff}
+.c-mail .c-btn-no{font-size:15px;word-break:break-all}
+.c-form{background:#fff;color:var(--green-d)}
+.c-form:hover{background:var(--green);color:#fff}
+.c-form .c-btn-no{font-size:17px}
+
+/* ===== フッター ===== */
+.ftr{background:var(--green-d);color:#dbe8dc;padding:30px 22px 26px;font-size:13px;line-height:1.9}
+.ftr-in{max-width:600px;margin:0 auto}
+.ftr-name{font-size:16px;font-weight:800;color:#fff;letter-spacing:.05em;margin:0 0 12px}
+.ftr-name small{font-size:12px;font-weight:600;letter-spacing:0;opacity:.8}
+.ftr dl{display:grid;grid-template-columns:5em 1fr;gap:1px 12px;margin:0}
+.ftr dt{font-weight:700;color:#a9cbad;white-space:nowrap}
+.ftr dd{margin:0}
+.ftr a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.ftr-lic{font-size:12px;color:#a9cbad;border-top:1px solid rgba(255,255,255,.18);padding-top:12px;margin-top:14px}
+@media(max-width:480px){.ftr dl{grid-template-columns:5.2em 1fr;gap:1px 8px}}
 </style></head><body>
 <header class="hdr"><div class="hdr-in">
 <a href="index.html" class="brand">ZER<span>O</span>UM</a>
 <a href="index.html" class="back">← TOPに戻る</a>
 </div></header>
 <main class="wrap">
-<section class="sec"><img src="images/works_page.png" alt="施工事例紹介">
+<section class="sec"><img src="images/works_page.png" alt="ZEROUM株式会社の施工事例｜エアコンの取り付け・交換、電気工事">
 <a class="cta" href="index.html" style="top:91.5%;left:40.3%;width:21.1%;height:2.9%"></a>
 </section>
-</main></body></html>
+
+<section id="contact" class="contact">
+<h2 class="c-ttl">無料相談・お見積り</h2>
+<p class="c-lead">「うちの場合はいくらかかる？」といったご相談だけでも構いません。まずはお気軽にご連絡ください。お見積りは無料です。</p>
+<div class="c-btns">
+<a class="c-btn c-tel" href="tel:09027611486"><span class="c-btn-lb">お電話でのご相談</span><span class="c-btn-no">090-2761-1486</span></a>
+<!-- ▼ Googleフォームができたら、次の1行のコメントを外して FORM_URL を差し替えてください -->
+<!-- <a class="c-btn c-form" href="FORM_URL" target="_blank" rel="noopener"><span class="c-btn-lb">フォームでのご相談</span><span class="c-btn-no">24時間受付中</span></a> -->
+<a class="c-btn c-mail" href="mailto:hirano.zeroum@gmail.com?subject=%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87%E3%83%BB%E3%81%8A%E8%A6%8B%E7%A9%8D%E3%82%8A%E3%81%AE%E3%81%94%E4%BE%9D%E9%A0%BC"><span class="c-btn-lb">メールでのご相談</span><span class="c-btn-no">hirano.zeroum@gmail.com</span></a>
+</div>
+</section>
+
+<footer class="ftr"><div class="ftr-in">
+<p class="ftr-name">ZEROUM株式会社 <small>（ゼローム株式会社）</small></p>
+<dl>
+<dt>代表者</dt><dd>代表取締役　平野 修</dd>
+<dt>所在地</dt><dd>〒341-0043　埼玉県三郷市栄1-102-2</dd>
+<dt>電話</dt><dd><a href="tel:09027611486">090-2761-1486</a></dd>
+<dt>FAX</dt><dd>048-611-7930</dd>
+<dt>メール</dt><dd><a href="mailto:hirano.zeroum@gmail.com">hirano.zeroum@gmail.com</a></dd>
+<dt>事業内容</dt><dd>電気計装工事、電気工事、空調設備工事</dd>
+<dt>対応エリア</dt><dd>埼玉県三郷市を中心とした近隣エリア</dd>
+</dl>
+<p class="ftr-lic">建設業許可　埼玉県知事許可　電気工事業（般-1）第72766号<br>電気工事業登録　埼玉県知事届出　第2019070号</p>
+</div></footer>
+</main>
+</body></html>
