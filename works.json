@@ -1,0 +1,38 @@
+{
+  "works": [
+    { "file": "w01.jpg", "category": "house",   "caption": "住宅のコンセント・スイッチ交換", "src": "助太刀提出写真_1" },
+    { "file": "w02.jpg", "category": "house",   "caption": "住宅内の電気配線工事", "src": "助太刀提出写真_13" },
+
+    { "file": "w03.jpg", "category": "shop",    "caption": "店舗天井の設備工事", "src": "助太刀提出写真_17" },
+    { "file": "w04.jpg", "category": "shop",    "caption": "店舗の内装に伴う電気工事", "src": "助太刀提出写真_21" },
+    { "file": "w05.jpg", "category": "shop",    "caption": "店舗の照明・空調設備工事", "src": "助太刀提出写真_22" },
+    { "file": "w06.jpg", "category": "shop",    "caption": "施設の空調ダクトまわりの工事", "src": "助太刀提出写真_23" },
+
+    { "file": "w07.jpg", "category": "control", "caption": "業務用空調機の点検・整備", "src": "助太刀提出写真_2" },
+    { "file": "w08.jpg", "category": "control", "caption": "天井配線の取り付け作業", "src": "助太刀提出写真_4" },
+    { "file": "w09.jpg", "category": "control", "caption": "制御盤の配線作業", "src": "助太刀提出写真_5" },
+    { "file": "w10.jpg", "category": "control", "caption": "施設天井の高所配線工事", "src": "助太刀提出写真_14" },
+    { "file": "w11.jpg", "category": "control", "caption": "分電盤・配電盤の工事", "src": "助太刀提出写真_15" },
+    { "file": "w12.jpg", "category": "control", "caption": "計装機器の点検・調整", "src": "助太刀提出写真_16" },
+
+    { "file": "w13.jpg", "category": "outdoor", "caption": "屋外現場での電気工事", "src": "助太刀提出写真_8" },
+    { "file": "w14.jpg", "category": "outdoor", "caption": "屋外現場での配線敷設", "src": "助太刀提出写真_9" },
+    { "file": "w15.jpg", "category": "outdoor", "caption": "現場での打ち合わせ", "src": "助太刀提出写真_10" },
+    { "file": "w16.jpg", "category": "outdoor", "caption": "建物外壁での配線工事", "src": "助太刀提出写真_18" },
+    { "file": "w17.jpg", "category": "outdoor", "caption": "業務用冷凍機（チラー）まわりの工事", "src": "助太刀提出写真_19" }
+  ],
+
+  "recruit": ["w15.jpg", "w04.jpg", "w12.jpg", "w10.jpg", "w03.jpg", "w14.jpg", "w02.jpg", "w17.jpg"],
+
+  "_memo": {
+    "除外した写真": {
+      "3":  "4とほぼ同じ",
+      "6":  "5とほぼ同じ",
+      "20": "666x308で小さすぎる",
+      "7":  "社内講習会・顔の写り込み・許可未確認",
+      "11": "屋形船（懇親会）・顔の写り込み・許可未確認",
+      "12": "屋形船の乗り場・一般の方の写り込みの可能性"
+    },
+    "キャプションについて": "工事内容は写真から判断した暫定。先方に確認が取れたら地域名（例：三郷市）を足すと検索に効く"
+  }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>施工事例｜ZEROUM株式会社</title>
-<meta name="description" content="ZEROUM（ゼローム）株式会社の施工事例。三郷市を中心にエアコン取付・交換、電気工事などの実績をご紹介します。">
+<meta name="description" content="ZEROUM（ゼローム）株式会社の施工事例。埼玉県三郷市を拠点に、住宅のエアコン取付・電気工事から、店舗・施設の空調設備工事、制御盤・計装工事、屋外・高所工事まで対応した実績をご紹介します。">
 <style>
 :root{--green:#2f9e44;--green-d:#1b5e20;--line:#e3e9e3;--col:840px;--hdr:54px}
 *{box-sizing:border-box} html{scroll-behavior:smooth}
@@ -11,11 +11,23 @@ body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto S
 .brand{font-weight:800;letter-spacing:.14em;color:var(--green-d);font-size:19px;text-decoration:none}
 .brand span{color:var(--green)}
 .wrap{max-width:var(--col);margin:0 auto;padding-top:var(--hdr);background:#fff;box-shadow:0 0 50px rgba(0,0,0,.07);min-height:100vh}
-.sec{position:relative;line-height:0} .sec img{width:100%;display:block}
-.sec[id]{scroll-margin-top:calc(var(--hdr) + 4px)}
-.cta{position:absolute;display:block;border-radius:40px;outline:0}
 .back{display:inline-flex;align-items:center;gap:6px;color:var(--green-d);text-decoration:none;font-size:14px;font-weight:700;padding:8px 16px;border:1.5px solid var(--green);border-radius:22px;transition:.15s}
 .back:hover{background:var(--green);color:#fff}
+
+/* ===== ギャラリー ===== */
+.gal{padding:40px 22px 46px;background:#fff}
+.gal-in{max-width:760px;margin:0 auto}
+.g-ttl{font-size:24px;font-weight:800;letter-spacing:.06em;margin:0;color:var(--green-d);text-align:center}
+.g-ttl::after{content:"";display:block;width:50px;height:3px;background:var(--green);border-radius:2px;margin:14px auto 0}
+.g-lead{font-size:14px;line-height:1.85;color:#375c3a;text-align:center;margin:20px auto 6px;max-width:32em}
+.g-cat{font-size:15px;font-weight:800;letter-spacing:.05em;color:var(--green-d);margin:38px 0 14px;padding-left:12px;border-left:5px solid var(--green);line-height:1.4}
+.g-grid{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px 14px;margin:0;padding:0}
+.g-item{margin:0}
+.g-item img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:10px;background:#eef3ee;border:1px solid var(--line)}
+.g-cap{display:block;font-size:12.5px;line-height:1.6;color:#2c4a30;margin-top:7px;font-weight:600}
+.g-plain .g-item img{aspect-ratio:1/1}
+.g-note{font-size:12px;color:#5c7a5e;text-align:center;margin:34px 0 0;line-height:1.8}
+@media(min-width:600px){.g-grid{grid-template-columns:repeat(3,1fr)}}
 
 /* ===== 問い合わせセクション ===== */
 .contact{background:#f4f9f4;padding:44px 22px 40px;text-align:center;line-height:1.75;scroll-margin-top:calc(var(--hdr) + 4px)}
@@ -52,9 +64,43 @@ body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto S
 <a href="index.html" class="back">← TOPに戻る</a>
 </div></header>
 <main class="wrap">
-<section class="sec"><img src="images/works_page.png" alt="ZEROUM株式会社の施工事例｜エアコンの取り付け・交換、電気工事">
-<a class="cta" href="index.html" style="top:91.5%;left:40.3%;width:21.1%;height:2.9%"></a>
-</section>
+
+<section class="gal"><div class="gal-in">
+<h2 class="g-ttl">施工事例</h2>
+<p class="g-lead">埼玉県三郷市を拠点に、ご家庭のエアコン取り付け・電気工事から、店舗・施設の空調設備工事、制御盤・計装工事まで幅広く対応しています。実際の現場の様子をご紹介します。</p>
+<!-- WORKS:START -->
+<h3 class="g-cat">住宅の電気工事</h3>
+<ul class="g-grid">
+<li class="g-item"><img src="images/works/w01.jpg" alt="住宅のコンセント・スイッチ交換｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">住宅のコンセント・スイッチ交換</span></li>
+<li class="g-item"><img src="images/works/w02.jpg" alt="住宅内の電気配線工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">住宅内の電気配線工事</span></li>
+</ul>
+<h3 class="g-cat">店舗・施設の工事</h3>
+<ul class="g-grid">
+<li class="g-item"><img src="images/works/w03.jpg" alt="店舗天井の設備工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">店舗天井の設備工事</span></li>
+<li class="g-item"><img src="images/works/w04.jpg" alt="店舗の内装に伴う電気工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">店舗の内装に伴う電気工事</span></li>
+<li class="g-item"><img src="images/works/w05.jpg" alt="店舗の照明・空調設備工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">店舗の照明・空調設備工事</span></li>
+<li class="g-item"><img src="images/works/w06.jpg" alt="施設の空調ダクトまわりの工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">施設の空調ダクトまわりの工事</span></li>
+</ul>
+<h3 class="g-cat">空調・計装・制御盤</h3>
+<ul class="g-grid">
+<li class="g-item"><img src="images/works/w07.jpg" alt="業務用空調機の点検・整備｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">業務用空調機の点検・整備</span></li>
+<li class="g-item"><img src="images/works/w08.jpg" alt="天井配線の取り付け作業｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">天井配線の取り付け作業</span></li>
+<li class="g-item"><img src="images/works/w09.jpg" alt="制御盤の配線作業｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">制御盤の配線作業</span></li>
+<li class="g-item"><img src="images/works/w10.jpg" alt="施設天井の高所配線工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">施設天井の高所配線工事</span></li>
+<li class="g-item"><img src="images/works/w11.jpg" alt="分電盤・配電盤の工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">分電盤・配電盤の工事</span></li>
+<li class="g-item"><img src="images/works/w12.jpg" alt="計装機器の点検・調整｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">計装機器の点検・調整</span></li>
+</ul>
+<h3 class="g-cat">屋外・高所の工事</h3>
+<ul class="g-grid">
+<li class="g-item"><img src="images/works/w13.jpg" alt="屋外現場での電気工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">屋外現場での電気工事</span></li>
+<li class="g-item"><img src="images/works/w14.jpg" alt="屋外現場での配線敷設｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">屋外現場での配線敷設</span></li>
+<li class="g-item"><img src="images/works/w15.jpg" alt="現場での打ち合わせ｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">現場での打ち合わせ</span></li>
+<li class="g-item"><img src="images/works/w16.jpg" alt="建物外壁での配線工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">建物外壁での配線工事</span></li>
+<li class="g-item"><img src="images/works/w17.jpg" alt="業務用冷凍機（チラー）まわりの工事｜ZEROUM株式会社の施工実績" loading="lazy" width="600" height="450"><span class="g-cap">業務用冷凍機（チラー）まわりの工事</span></li>
+</ul>
+<!-- WORKS:END -->
+<p class="g-note">掲載しているのは施工事例の一部です。<br>「うちの場合はどうなる？」といったご相談も、お気軽にどうぞ。</p>
+</div></section>
 
 <section id="contact" class="contact">
 <h2 class="c-ttl">無料相談・お見積り</h2>

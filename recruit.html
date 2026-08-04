@@ -19,6 +19,17 @@ body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto S
 .back:hover{background:var(--green);color:#fff}
 .cta:hover{background:rgba(255,255,255,.12)}
 
+/* ===== 現場の様子ギャラリー ===== */
+.gal{padding:40px 22px 44px;background:#f4f9f4;scroll-margin-top:calc(var(--hdr) + 4px)}
+.gal-in{max-width:760px;margin:0 auto}
+.g-ttl{font-size:22px;font-weight:800;letter-spacing:.06em;margin:0;color:var(--green-d);text-align:center}
+.g-ttl::after{content:"";display:block;width:46px;height:3px;background:var(--green);border-radius:2px;margin:13px auto 0}
+.g-lead{font-size:14px;line-height:1.85;color:#375c3a;text-align:center;margin:20px auto 24px;max-width:30em}
+.g-grid{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0;padding:0}
+.g-item{margin:0}
+.g-item img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:10px;background:#eef3ee;border:1px solid var(--line)}
+@media(min-width:600px){.g-grid{grid-template-columns:repeat(4,1fr)}}
+
 /* ===== 募集要項（詳細）テキスト ===== */
 .detail{background:#fff;padding:38px 24px 42px;line-height:1.85;scroll-margin-top:calc(var(--hdr) + 4px)}
 .detail-in{max-width:620px;margin:0 auto}
@@ -65,7 +76,26 @@ body{margin:0;background:#e9efe9;font-family:"Hiragino Kaku Gothic ProN","Noto S
 <a href="index.html" class="brand">ZER<span>O</span>UM</a>
 <a href="index.html" class="back">← TOPに戻る</a>
 </div></header>
-<main class="wrap"><section id="r_top" class="sec"><img src="images/r_top.png" alt="ZEROUM株式会社 採用情報｜電気工事・計装工事・電気設備工事スタッフ募集（未経験歓迎）" loading="lazy"><a class="cta" href="#contact" style="top:82.5%;left:25.3%;width:25.1%;height:10.3%"></a><a class="cta" href="#contact" style="top:83.4%;left:52.8%;width:21.7%;height:9.0%"></a></section><section id="r_charm" class="sec"><img src="images/r_charm.png" alt="ZEROUMで働く4つの魅力｜未経験から電気のプロへ・資格取得を会社が全力サポート・風通しの良い職場・三郷拠点で週休二日制" loading="lazy"></section><section id="r_message" class="sec"><img src="images/r_message.png" alt="代表からのメッセージ" loading="lazy"></section><section id="r_youkou" class="sec"><img src="images/r_youkou.png" alt="募集要項｜電気工事・計装工事・電気設備工事スタッフ／月給207,000円〜417,000円／勤務地 埼玉県三郷市栄1-102-2／未経験歓迎" loading="lazy"></section>
+<main class="wrap"><section id="r_top" class="sec"><img src="images/r_top.png" alt="ZEROUM株式会社 採用情報｜電気工事・計装工事・電気設備工事スタッフ募集（未経験歓迎）" loading="lazy"><a class="cta" href="#contact" style="top:82.5%;left:25.3%;width:25.1%;height:10.3%"></a><a class="cta" href="#contact" style="top:83.4%;left:52.8%;width:21.7%;height:9.0%"></a></section><section id="r_charm" class="sec"><img src="images/r_charm.png" alt="ZEROUMで働く4つの魅力｜未経験から電気のプロへ・資格取得を会社が全力サポート・風通しの良い職場・三郷拠点で週休二日制" loading="lazy"></section>
+
+<section id="r_gallery" class="gal"><div class="gal-in">
+<h2 class="g-ttl">現場の様子</h2>
+<p class="g-lead">住宅の電気工事から、店舗・施設の空調設備工事、制御盤・計装工事まで。実際に私たちが働いている現場です。</p>
+<!-- GALLERY:START -->
+<ul class="g-grid g-plain">
+<li class="g-item"><img src="images/works/w02.jpg" alt="住宅内の電気配線工事" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w03.jpg" alt="店舗天井の設備工事" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w04.jpg" alt="店舗の内装に伴う電気工事" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w10.jpg" alt="施設天井の高所配線工事" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w12.jpg" alt="計装機器の点検・調整" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w14.jpg" alt="屋外現場での配線敷設" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w15.jpg" alt="現場での打ち合わせ" loading="lazy" width="600" height="450"></li>
+<li class="g-item"><img src="images/works/w17.jpg" alt="業務用冷凍機（チラー）まわりの工事" loading="lazy" width="600" height="450"></li>
+</ul>
+<!-- GALLERY:END -->
+</div></section>
+
+<section id="r_message" class="sec"><img src="images/r_message.png" alt="代表からのメッセージ" loading="lazy"></section><section id="r_youkou" class="sec"><img src="images/r_youkou.png" alt="募集要項｜電気工事・計装工事・電気設備工事スタッフ／月給207,000円〜417,000円／勤務地 埼玉県三郷市栄1-102-2／未経験歓迎" loading="lazy"></section>
 
 <section id="r_detail" class="detail"><div class="detail-in">
 <h2 class="d-ttl">募集要項（詳細）</h2>
