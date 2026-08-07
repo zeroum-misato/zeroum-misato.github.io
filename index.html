@@ -23,7 +23,55 @@
   },
   "areaServed": { "@type": "AdministrativeArea", "name": "埼玉県三郷市および近隣エリア" },
   "founder": { "@type": "Person", "name": "平野 修" },
-  "foundingDate": "2019"
+  "foundingDate": "2019",
+  "knowsAbout": ["エアコン取り付け", "エアコン交換", "換気扇工事", "給湯器交換", "業務用空調設備", "電気計装工事", "制御盤工事", "分電盤工事", "省エネ設計"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "サービス内容",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "個人のお客様",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "家庭用エアコンの取り付け・交換", "serviceType": "空調設備工事" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "キッチン・トイレ・お風呂の換気扇工事", "serviceType": "換気設備工事" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "給湯器交換・小規模な修理", "serviceType": "住宅設備工事" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "法人のお客様",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "業務用エアコンの設置・入替", "serviceType": "空調設備工事" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ビル・店舗の換気システム", "serviceType": "換気設備工事" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "電気工事・設備メンテナンス", "serviceType": "電気工事" } }
+        ]
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "見積もりは無料ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "見積もりは無料で承ります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "当日の追加料金が発生することはありますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "原則として発生しません。事前の情報に基づき確定価格を提示し、ご了承いただいてから作業いたします。" }
+    },
+    {
+      "@type": "Question",
+      "name": "補助金の対象事業者ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "対象事業者です。必要な書類の準備や申請手順のサポートをいたします。" }
+    }
+  ]
 }
 </script>
 <style>
